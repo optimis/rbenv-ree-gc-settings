@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 set -e
 
-export RUBY_HEAP_MIN_SLOTS=1000000
-export RUBY_HEAP_SLOTS_INCREMENT=250000
-export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
-export RUBY_GC_MALLOC_LIMIT=80000000
-export RUBY_HEAP_FREE_MIN=100000
+export RUBY_HEAP_MIN_SLOTS=<%= node['rbenv']['ruby_heap_min_slots'] %>
+export RUBY_HEAP_SLOTS_INCREMENT=<%= node['rbenv']['ruby_heap_slots_increment'] %>
+export RUBY_HEAP_SLOTS_GROWTH_FACTOR=<%= node['rbenv']['ruby_heap_slots_growth_factor'] %>
+export RUBY_GC_MALLOC_LIMIT=<%= node['rbenv']['ruby_gc_malloc_limit'] %>
+export RUBY_HEAP_FREE_MIN=<%= node['rbenv']['ruby_heap_free_min'] %>
 
 export RBENV_ROOT="/usr/local/rbenv"
 export PATH="$RBENV_ROOT/shims:$RBENV_ROOT/bin:$PATH"
