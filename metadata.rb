@@ -1,3 +1,5 @@
+name              'rbenv-ree-gc-settings'
+
 maintainer        'OptimisCorp., Inc.'
 maintainer_email  'ops+cookbooks@optimiscorp.com'
 
